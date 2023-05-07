@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #051642;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* ------------------- */
+/* HEADER */
+/* ------------------- */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    position: relative;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-sx, .header-dx {
+    width: 50%;
+}
+
+.header-sx {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    background-color: orange;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 15px;
+    border-radius: 50px;
+}
+
+.cat-icon {
+    font-size: 30px;
+    color: #051642;
+}
+
+.button {
+    background-color: orange;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50px;
+    max-width: 150px;
+    color: #051642;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    text-decoration: none; 
+    color: #051642;
+    padding: 13px 35px;
+}
+
+.button a:hover{
+    color: orange;
+}
+
+.button:hover {
+    border: 3px solid orange;
+    background-color: #051642;
+    color: orange;
+}
+
+.fixed-container {
+    display: flex;
+    justify-content: end;
+
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.btn-fixed {
+    position: sticky;
+    top: 0;
+    background-color: orange;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 100px;
+    align-content: center;
+    font-size: 30px;
+    border: 4px solid transparent;
+}
+
+.btn-fixed:hover {
+    border: 4px solid orange;
+    background-color: #051642;
+    color: orange;
+}
+
+.fixed-container a {
+    text-decoration: none;
+    color: #051642;
+}
+
+/* ------------------- */
+/* HERO */
+/* ------------------- */
+
+#hero h2 {
+    color: white;
+    padding: 40px 100px;
+    font-size: 50px;
+}
+
+#hero h1 .fa-solid{
+    color: orange;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 65px;
+    margin: 0px 0px 80px 150px;
+    border-bottom: 5px solid orange;
+    display: inline-block;
+}
+
+.container-world {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth {
+    color: #4161ff;
+    font-size: 150px;
+}
+
+.earth:hover{
+    color: orange;
+}
+
+.btn-world {
+    background-color: orange;
+    color: #051642;
+    border-radius: 50px;
+    height: 70px;
+    padding: 50px 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    cursor: pointer;
+    border: 3px solid transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-world a {
+    text-decoration: none;
+}
+
+.btn-world:hover {
+    border: 3px solid transparent;
+    background-color: #4161ff;
+    color: orange;
+}
+
+/* ------------------- */
+/* ABOUT ME */
+/* ------------------- */
+
+#about-me {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me h2 {
+    color: white;
+    font-size:50px; 
+    margin-bottom: 30px;
+}
+
+.my-description {
+    background-color: orange;
+    width: 60%;
+    padding: 30px 50px;
+    border-radius: 50px;
+    margin: 40px 0px;
+}
+
+.my-description p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.my-hobbies, .my-project {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.hobby-card, .project-card {
+    background-color: #071b80;
+    width: 30%;
+    min-height: 300px;
+    margin: 30px 20px;
+    border-radius: 50px;
+    padding: 30px 30px;
+    border: 3px solid transparent;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobby-card:hover, .project-card:hover {
+    border: 3px solid orange;
+}
+
+.hobby-card p {
+    color: white;
+}
+
+.hobby-card h4 {
+    color: orange;
+    font-size: 25px;
+    margin: 0px 0px 20px 0px;
+}
+
+.mountain-icon, .art-icon, .write-icon {
+    color: orange;
+    font-size: 40px;
+    margin: 25px 0px;
+}
+
+
+/* ------------------- */
+/* PROJECT */
+/* ------------------- */
+
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project h2 {
+    color: white;
+    font-size:50px; 
+    margin: 100px 0px;
+}
+
+.project-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    color: orange;
+    font-size: 20px;
+    margin: 0px 0px 40px 0px;
+}
+
+.project-title h4 {
+    font-size: 25px;
+}
+
+/* ------------------- */
+/* CONTACTS */
+/* ------------------- */
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts h2 {
+    color: white;
+    font-size: 65px; 
+    margin: 100px 0px;
+}
+
+.contact-list {
+    background-color: #071b80;
+    width: 75%;
+    min-height: 200px;
+    border-radius: 50px;
+    padding: 50px;
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-icon {
+    color: orange;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.contact-list h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.contact-list a {
+    text-decoration: none;
+}
+
+.linkedin-icon {
+    color: orange;
+    font-size: 80px;
+    margin: 30px;
+}
+
+.linkedin-active:hover {
+    color: orange;
+}
+
+/* ------------------- */
+/* FOOTER */
+/* ------------------- */
+
+#footer {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    color: orange;
+    font-size: 40px;
+    margin: 20px;
+}
+
+#footer h5 {
+    color: white;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.heart-icon {
+    color: orange;
+    font-size: 30px;
+}
+
